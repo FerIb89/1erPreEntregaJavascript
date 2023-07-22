@@ -25,11 +25,11 @@ monotributista = prompt("Ingrese SI o NO por favor").toLowerCase();
 
 if (monotributista == "si") 
 {
-    alert("Usted va a obtener un descuento del %25");
+    alert("Usted va a obtener un descuento del % 25");
     porcentaje = (precioCajon * porcentaje) / 100;
     precioCajonDescuento = (precioCajon - porcentaje);
     precioCajon = precioCajonDescuento;
-    alert("El precio del cajon es de: $" + precioCajon);
+    alert("El precio del cajon es de: $ " + precioCajon);
 }
 else 
 {
@@ -71,7 +71,7 @@ if (tarjeta == "si")
     switch (cuotas) 
     {
         case "1":
-            alert(" El precio final es: $ " + precioFinal);
+            alert(nombreUsuario + " El precio final es: $ " + precioFinal);
             break;
 
         case "3":
@@ -79,24 +79,28 @@ if (tarjeta == "si")
             porcentajeTarjeta = (precioFinal * 15) / 100;
             precioFinal = precioFinal + porcentajeTarjeta;
             precioCuota = precioFinal / 3;
-            alert(" El precio final es: $ " + precioFinal + ("\nen 3 cuotas de: $") + precioCuota);
+            alert("El precio final es: $ " + precioFinal + ("\nen 3 cuotas de: $ ") + precioCuota);
             break;
 
         case "6":
             porcentajeTarjeta = (precioFinal * 45) / 100;
             precioFinal = precioFinal + porcentajeTarjeta;
             precioCuota = precioFinal / 6;
-            alert(" El precio final es: $ " + precioFinal + ("\nen 6 cuotas de: $") + precioCuota);
+            alert("El precio final es: $ " + precioFinal + ("\nen 6 cuotas de: $ ") + precioCuota);
             break;
 
         case "12":
             porcentajeTarjeta = (precioFinal * 75) / 100;
             precioCuota = precioFinal / 12;
             precioFinal = precioFinal + porcentajeTarjeta;
-            alert(" El precio final es: $" + precioFinal + ("\nen 12 cuotas de: $") + precioCuota);
+            alert("El precio final es: $ " + precioFinal + ("\nen 12 cuotas de: $ ") + precioCuota);
             break;
     }
 
+}
+else 
+{
+    alert(nombreUsuario + ", Su saldo a abonar es: $" + precioFinal );
 }
 
 saludar ();
