@@ -1,0 +1,22 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-image: url(../img/manzana2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h1
+{
+  font-size:60px;
+  text-align: center;
+  background: linear-gradient(rgba(155, 2, 2, 0.932), transparent);
+  color: #c2e20c;
+  text-shadow: 8px 5px 5px rgba(43, 192, 6, 0.624);
+}
