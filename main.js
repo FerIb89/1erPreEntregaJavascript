@@ -33,7 +33,7 @@ if (monotributista == "si")
 }
 else 
 {
-    alert("El precio del cajon es de: $" + precioCajon);
+    alert("El precio del cajon es de: $ " + precioCajon);
 }
 
 while (continuarCompra == "si") 
@@ -51,7 +51,7 @@ while (continuarCompra == "si")
     continuarCompra = prompt("¿Desea seguir comprando? SI / NO").toLowerCase(); 
 }
 
-let tarjeta = prompt("El monto total es de: $" + precioFinal + " ¿Desea pagar con tarjeta? SI / NO" ).toLowerCase();
+let tarjeta = prompt("El monto total es de: $ " + precioFinal + ". ¿Desea pagar con tarjeta? SI / NO" ).toLowerCase();
 
 while (tarjeta != "si" && tarjeta != "no")
 {
@@ -61,7 +61,7 @@ tarjeta = prompt("Ingrese SI o NO por favor").toLowerCase();
 
 if (tarjeta == "si") 
 {
-    let cuotas = prompt("¿Desea hacerlo en 1, 3, 6 o 12 cuotas?\n\n1 cuota: sin interes\n3 cuotas: %15 de interes\n6 cuotas %45 de interes\n12 cuotas %75 de interes");
+    let cuotas = prompt("¿Desea hacerlo en 1, 3, 6 o 12 cuotas?\n\n1 cuota: Sin interes\n3 cuotas: % 15 de interes\n6 cuotas % 45 de interes\n12 cuotas % 75 de interes");
 
         while (cuotas != "1" && cuotas != "3" && cuotas != "6" && cuotas != "12")
             {
@@ -71,7 +71,7 @@ if (tarjeta == "si")
     switch (cuotas) 
     {
         case "1":
-            alert(nombreUsuario + " el precio final es: $" + precioFinal);
+            alert(" El precio final es: $ " + precioFinal);
             break;
 
         case "3":
@@ -79,28 +79,24 @@ if (tarjeta == "si")
             porcentajeTarjeta = (precioFinal * 15) / 100;
             precioFinal = precioFinal + porcentajeTarjeta;
             precioCuota = precioFinal / 3;
-            alert(nombreUsuario + ", el precio final es: $" + precioFinal + ("\nen 3 cuotas de: $") + precioCuota);
+            alert(" El precio final es: $ " + precioFinal + ("\nen 3 cuotas de: $") + precioCuota);
             break;
 
         case "6":
             porcentajeTarjeta = (precioFinal * 45) / 100;
             precioFinal = precioFinal + porcentajeTarjeta;
             precioCuota = precioFinal / 6;
-            alert(nombreUsuario + ", el precio final es: $" + precioFinal + ("\nen 6 cuotas de: $") + precioCuota);
+            alert(" El precio final es: $ " + precioFinal + ("\nen 6 cuotas de: $") + precioCuota);
             break;
 
         case "12":
             porcentajeTarjeta = (precioFinal * 75) / 100;
             precioCuota = precioFinal / 12;
             precioFinal = precioFinal + porcentajeTarjeta;
-            alert(nombreUsuario + ", el precio final es: $" + precioFinal + ("\nen 12 cuotas de: $") + precioCuota);
+            alert(" El precio final es: $" + precioFinal + ("\nen 12 cuotas de: $") + precioCuota);
             break;
     }
 
-}
-else 
-{
-    alert(nombreUsuario + ", Su saldo a abonar es: $" + precioFinal );
 }
 
 saludar ();
